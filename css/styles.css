@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --very-dark-blue-bg: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-dark-blue-bg);
+}
+
+.nft-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-blue-card);
+    border-radius: 3%;
+    width: 350px;
+    padding: 1.2em;
+}
+
+/* Styling the nft images */
+.nft-images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5em;
+}
+
+.nft-images img {
+    border-radius: 3%;
+}
+
+
+.view-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background-color: hsl(178, 100%, 50%, 50%);
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+    border-radius: 3%;
+}
+
+.view-icon-container:hover {
+    opacity: 1;
+}
+
+.nft-photo {
+    z-index: 0;
+    height: auto;
+    width: 300px;
+}
+
+/* Styling the nft details */
+.nft-name {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nft-name:hover {
+    color: var(--cyan);
+}
+
+.nft-description {
+    color: var(--soft-blue);
+    font: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+/* Styling NFT Price info Section */
+.nft-price-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--cyan);
+    font-weight: 600;
+    font-family: 18px;
+}
+
+.days {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--soft-blue);
+}
+
+/* Styling Avatar */
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    border-top: 1px solid hsl(215, 51%, 70%, 50%);
+    padding-top: 1em;
+}
+
+.avatar img {
+    width: auto;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.avatar p {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font: 18px;
+}
+
+.avatar p span {
+    color: var(--white);
+}
+
+.avatar p span:hover {
+    color: var(--cyan);
+}
